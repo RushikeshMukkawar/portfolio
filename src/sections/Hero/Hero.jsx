@@ -8,6 +8,8 @@ import githubLight from '../../assets/github-light.svg';
 import githubDark from '../../assets/github-dark.svg';
 import linkedinLight from '../../assets/linkedin-light.svg';
 import linkedinDark from '../../assets/linkedin-dark.svg';
+import leetcodeDark from '../../assets/leetcode-dark.png';
+import leetcodeLight from '../../assets/leetcode-light.png';
 import CV from "../../assets/Rushikesh Mukkawar - Resume.pdf"
 import { useTheme } from '../../common/ThemeContext';
 
@@ -18,6 +20,7 @@ function Hero() {
   const twitterIcon = theme === 'light' ? twitterLight : twitterDark;
   const githubIcon = theme === 'light' ? githubLight : githubDark;
   const linkedinIcon = theme === 'light' ? linkedinLight : linkedinDark;
+  const LeetcodeIcon = theme === 'light' ? leetcodeDark : leetcodeLight;
 
   return (
     <section id="hero" className={styles.container}>
@@ -43,11 +46,14 @@ function Hero() {
           <a href="https://twitter.com/" target="_blank">
             <img src={twitterIcon} alt="Twitter icon" />
           </a>
-          <a href="https://github.com/" target="_blank">
+          <a href="https://github.com/RushikeshMukkawar" target="_blank">
             <img src={githubIcon} alt="Github icon" />
           </a>
-          <a href="https://linkedin.com/" target="_blank">
+          <a href="https://www.linkedin.com/in/rushikesh-mukkawar-2aa44b221/" target="_blank">
             <img src={linkedinIcon} alt="Linkedin icon" />
+          </a>
+          <a href="https://leetcode.com/u/Rushi_Mukkawar/" target="_blank">
+            <img id='leetcode' style={{width: "26px", height: "25px", borderRadius: "4px"}} src={LeetcodeIcon} alt="Leetcode icon" />
           </a>
         </span>
         <p className={styles.description}>

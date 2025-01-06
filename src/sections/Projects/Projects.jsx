@@ -1,38 +1,38 @@
 import styles from './ProjectsStyles.module.css';
-import viberr from '../../assets/viberr.png';
-import freshBurger from '../../assets/fresh-burger.png';
-import hipsster from '../../assets/hipsster.png';
-import fitLift from '../../assets/fitlift.png';
+import aurveda from '../../assets/ayurveda.png';
+import helmet from '../../assets/helmet.png';
+import sumz from '../../assets/sumz.png';
+import moneymint from '../../assets/moneymint.png';
 import ProjectCard from '../../common/ProjectCard';
 
 function Projects() {
   return (
     <section id="projects" className={styles.container}>
-      <h1 className="sectionTitle">Projects</h1>
+      <h1 className="sectionTitle" >Projects</h1>
       <div className={styles.projectsContainer}>
         <ProjectCard
-          src={viberr}
-          link="https://github.com/Ade-mir/company-landing-page-2"
-          h3="Viberr"
-          p="Streaming App"
+          src={helmet}
+          link="https://github.com/RushikeshMukkawar/Accident-Detection-System"
+          h3="Smart Helmet"
+          p="Accident Detection App"
         />
         <ProjectCard
-          src={freshBurger}
-          link="https://github.com/Ade-mir/company-landing-page-2"
-          h3="Fresh Burger"
-          p="Hamburger Restaurant"
+          src={aurveda}
+          link="https://github.com/RushikeshMukkawar/ayuveer"
+          h3="Ayuveer"
+          p="Ayurvedic App"
         />
+          <ProjectCard 
+            src={sumz}
+            link="https://github.com/RushikeshMukkawar/AI-SUMMARIZER"
+            h3="Sumz"
+            p="AI Summerizer"
+          />
         <ProjectCard
-          src={hipsster}
-          link="https://github.com/Ade-mir/company-landing-page-2"
-          h3="Hipsster"
-          p="Glasses Shop"
-        />
-        <ProjectCard
-          src={fitLift}
-          link="https://github.com/Ade-mir/company-landing-page-2"
-          h3="FitLift"
-          p="Fitness App"
+          src={moneymint}
+          link="https://github.com/RushikeshMukkawar/MoneyMint"
+          h3="MoneyMint"
+          p="Decentralized Payment App"
         />
       </div>
     </section>
